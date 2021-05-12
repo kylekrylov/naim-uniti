@@ -1640,6 +1640,7 @@ button.swiper-pagination-bullet {
   padding: 15px 15px 15px 49px;
   margin-left: -40px;
   z-index: 1;
+  text-align: left;
 }
 
 .description__title::before {
@@ -2106,6 +2107,14 @@ button.swiper-pagination-bullet {
     font-size: 28px;
   }
 
+  .section {
+    padding-top: 60px;
+  }
+
+  .section__content {
+    padding-bottom: 60px;
+  }
+
   .section__subtitle {
     font-size: 12px;
   }
@@ -2129,8 +2138,9 @@ button.swiper-pagination-bullet {
   }
 
   .description__title {
+    max-width: 160px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px 10px 8px 30px;
   }
 
