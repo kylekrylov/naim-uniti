@@ -1450,6 +1450,10 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 
+.descriptions .description:nth-child(1) {
+  z-index: 11;
+}
+
 .descriptions--atom .description:nth-child(1) {
   top: 19%;
   right: 14%;
@@ -1473,6 +1477,81 @@ button.swiper-pagination-bullet {
 .descriptions--atom .description:nth-child(5) {
   top: 88%;
   right: 13%;
+}
+
+.descriptions--star .description:nth-child(1) {
+  top: 3%;
+  left: 29%;
+}
+
+.descriptions--star .description:nth-child(2) {
+  top: 14%;
+  right: 40%;
+}
+
+.descriptions--star .description:nth-child(3) {
+  top: 45%;
+  right: 28%;
+}
+
+.descriptions--star .description:nth-child(4) {
+  top: 56%;
+  left: 33%;
+}
+
+.descriptions--star .description:nth-child(5) {
+  top: 77%;
+  right: 16%;
+}
+
+.descriptions--nova .description:nth-child(1) {
+  top: 12%;
+  right: 40%;
+}
+
+.descriptions--nova .description:nth-child(2) {
+  top: 54%;
+  left: 32%;
+}
+
+.descriptions--nova .description:nth-child(3) {
+  top: 58%;
+  right: 19%;
+}
+
+.descriptions--nova .description:nth-child(4) {
+  top: 67%;
+  left: 33%;
+}
+
+.descriptions--nova .description:nth-child(5) {
+  top: 80%;
+  right: 35%;
+}
+
+.descriptions--core .description:nth-child(1) {
+  top: 22%;
+  left: 25%;
+}
+
+.descriptions--core .description:nth-child(2) {
+  top: 26%;
+  right: 32%;
+}
+
+.descriptions--core .description:nth-child(3) {
+  top: 44%;
+  left: 9%;
+}
+
+.descriptions--core .description:nth-child(4) {
+  top: 66%;
+  left: 18%;
+}
+
+.descriptions--core .description:nth-child(5) {
+  top: 83%;
+  left: 46%;
 }
 
 .description {
@@ -1593,8 +1672,8 @@ button.swiper-pagination-bullet {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-  opacity: 0;
   text-align: left;
+  opacity: 0;
   visibility: hidden;
   z-index: 1;
 }
@@ -1620,6 +1699,9 @@ button.swiper-pagination-bullet {
 .description.active .description__text {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .description.active .description__ball {
@@ -1635,8 +1717,9 @@ button.swiper-pagination-bullet {
 }
 
 .description--l .description__title {
-  right: 30px;
+  right: -10px;
   left: auto;
+  padding: 15px 50px 15px 15px;
 }
 
 .description--l .description__text {
@@ -1836,15 +1919,11 @@ button.swiper-pagination-bullet {
     height: calc(100vh - 50px);
   }
 
-  .description__title::before {
-    border-radius: 30px;
-  }
-
   .description--l .description__title {
     right: auto;
     left: 30px;
     padding: 15px 15px 15px 50px;
-    margin-left: -40px;
+    margin-right: -40px;
   }
 
   .description--l .description__text {
@@ -2045,7 +2124,12 @@ button.swiper-pagination-bullet {
             transform: scale(0.5);
   }
 
+  .description__title::before {
+    border-radius: 10px;
+  }
+
   .description__title {
+    border-radius: 10px;
     font-size: 14px;
     padding: 8px 10px 8px 30px;
   }
@@ -2059,9 +2143,15 @@ button.swiper-pagination-bullet {
     font-size: 12px;
   }
 
+  .description--l .description__title {
+    left: 38px;
+    top: -2px;
+    padding: 8px 10px 8px 30px;
+  }
+
   .description--r .description__title {
     right: 38px;
-    top: -3px;
+    top: -2px;
     padding: 8px 30px 8px 10px;
   }
 
